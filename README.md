@@ -1,0 +1,1 @@
+An example using Model-View-Controller design patern with Moai SDK.
