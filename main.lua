@@ -43,19 +43,10 @@ gfxQuad:setRect(-64, -64, 64, 64)
 MOAISim.pushRenderPass(layer)
 
 ----------
-
+block_view = BlockView.new()
 block_model = BlockModel.new(0, 0)
-block_view1 = BlockView.new()
-block_view2 = BlockView.new()
-block_controller = BlockController.new(block_model)
-
-block_model:addObserver(block_view1)
-block_model:addObserver(block_view2)
-
-block_model:setLocation(12, 20)
-block_model:setLocation(12, 20)
-block_model:setLocation(21, 20)
-
+block_model:addObserver(block_view)
+block_controller = BlockController.new(block_model, block_view)
 ----------
 
 mouse_x = 0

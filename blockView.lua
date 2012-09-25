@@ -8,12 +8,14 @@ function BlockView.new()
   block_view:setLoc(0, 0)
   block_view:setScl(0.8, 0.8)
 
+  partition:insertProp(block_view)
+
   layer:insertProp(block_view)
 
-  function block_view:update(x, y)
+  function block_view:update(x, y, xScl, yScl)
     -- Here we receive block model changes
-    print('Model changed to: ', x, y)
     self:setLoc(x, y)
+    self:setScl(xScl, yScl)
   end
 
   return block_view
