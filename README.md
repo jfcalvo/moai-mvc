@@ -1,1 +1,1 @@
-An example using Model-View-Controller design patern with Moai SDK.
+An example using Model-View-Controller design pattern with Moai SDK.
